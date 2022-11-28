@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon src/index"
   },
+  "type":"module",
   "author": "Yogesh Gaur",
   "license": "ISC",
   "dependencies": {

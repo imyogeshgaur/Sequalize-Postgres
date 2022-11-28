@@ -1,4 +1,4 @@
-const Product = require("../model/product.entity");
+import Product from "../model/product.entity.js"
 
 class UserService {
     async createProduct(body) {
@@ -32,5 +32,5 @@ class UserService {
     }
 }
 
-module.exports = UserService;
+export default UserService;
 

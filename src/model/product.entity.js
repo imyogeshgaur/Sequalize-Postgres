@@ -1,5 +1,5 @@
-const { Sequelize, DataTypes } = require('sequelize');
-require('pg');
+import { DataTypes,Sequelize} from "sequelize"
+import pg from "pg"
 const sequelize = new Sequelize('testing', 'postgres', 'root', {
     host: 'localhost',
     dialect: 'postgres',
@@ -15,4 +15,4 @@ const Product = sequelize.define('Product',{
     }
 })
 Product.sync({alter:true})
-module.exports = Product
+export default Product
